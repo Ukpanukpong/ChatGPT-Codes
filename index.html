@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Devotion Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Family Devotion App</h1>
+        <p>Daily Scripture + William Branham Sermon Quote (Full-Year Calendar)</p>
+      </header>
+
+      <section class="toolbar">
+        <label for="yearSelect">Year:</label>
+        <select id="yearSelect"></select>
+        <button id="todayBtn" type="button">Go to Today</button>
+      </section>
+
+      <section class="calendar-wrap">
+        <div class="calendar-grid" id="calendarGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="devotion-card" id="devotionCard">
+        <h2 id="devotionDate">Select a day</h2>
+        <article>
+          <h3>Scripture</h3>
+          <p id="scriptureText">Choose a date from the calendar to view the daily scripture.</p>
+          <p id="scriptureRef" class="reference"></p>
+        </article>
+        <article>
+          <h3>William Branham Sermon Quote</h3>
+          <blockquote id="quoteText">Daily quote will appear here.</blockquote>
+          <p id="quoteRef" class="reference"></p>
+        </article>
+      </section>
+
+      <footer>
+        <h3>Author</h3>
+        <p>
+          John Ukpanukpong<br />
+          The Bride Of Jesus Christ Tabernacle, Ibong, Obudu, Cross River, Nigeria<br />
+          2348167168911
+        </p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
