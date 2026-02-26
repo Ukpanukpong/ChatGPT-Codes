@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Family Devotion Calendar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Family Devotion Calendar</h1>
+      <p>Daily Scripture and William Branham Sermon Quote (1-year plan)</p>
+    </header>
+
+    <section class="controls">
+      <label for="dayPicker">Choose a day:</label>
+      <input id="dayPicker" type="date" />
+      <button id="todayBtn" type="button">Today</button>
+    </section>
+
+    <section class="card" id="devotionCard">
+      <h2 id="dateTitle"></h2>
+      <article>
+        <h3>Scripture</h3>
+        <p id="scriptureRef" class="ref"></p>
+        <p id="scriptureText"></p>
+      </article>
+      <article>
+        <h3>William Branham Quote</h3>
+        <p id="quoteText"></p>
+        <p id="quoteSource" class="ref"></p>
+      </article>
+    </section>
+
+    <section class="meta">
+      <h3>Author</h3>
+      <p>John Ukpanukpong</p>
+      <p>The Bride Of Jesus Christ Tabernacle, Ibong, Obudu, Cross River, Nigeria</p>
+      <p>2348167168911</p>
+    </section>
+  </main>
+
+  <script src="devotions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
